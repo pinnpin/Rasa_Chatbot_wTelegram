@@ -1,0 +1,370 @@
+version: '3.1'
+intents:
+- affirm
+- ask_mental_assessment
+- bot_challenge
+- deny
+- give_country
+- give_name
+- give_number
+- goodbye
+- greet
+- mood_great
+- mood_unhappy
+- ask_country
+forms:
+  name_form:
+    required_slots:
+    - first_name
+  pais_form:
+    required_slots:
+    - pais
+  number_form:
+    required_slots:
+    - number
+  number_form_1:
+    required_slots:
+    - number_1
+  number_form_2:
+    required_slots:
+    - number_2
+  number_form_3:
+    required_slots:
+    - number_3
+  number_form_4:
+    required_slots:
+    - number_4
+  number_form_5:
+    required_slots:
+    - number_5
+  number_form_6:
+    required_slots:
+    - number_6
+  number_form_7:
+    required_slots:
+    - number_7
+  number_form_8:
+    required_slots:
+    - number_8
+  number_form_9:
+    required_slots:
+    - number_9
+  number_form_10:
+    required_slots:
+    - number_10
+  number_form_11:
+    required_slots:
+    - number_11
+  number_form_12:
+    required_slots:
+    - number_12
+  number_form_13:
+    required_slots:
+    - number_13
+  number_form_14:
+    required_slots:
+    - number_14
+  number_form_15:
+    required_slots:
+    - number_15
+  number_form_16:
+    required_slots:
+    - number_16
+  number_form_17:
+    required_slots:
+    - number_17
+  number_form_18:
+    required_slots:
+    - number_18
+  number_form_19:
+    required_slots:
+    - number_19
+  
+slots:
+  first_name:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_text
+      conditions:
+      - active_loop: name_form
+        requested_slot: first_name
+  pais:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_text
+      conditions:
+      - active_loop: pais_form
+        requested_slot: pais
+  number:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_text
+      conditions:
+      - active_loop: number_form
+        requested_slot: number
+  number_1:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_text
+      conditions:
+      - active_loop: number_form_1
+        requested_slot: number_1
+  number_2:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_text
+      conditions:
+      - active_loop: number_form_2
+        requested_slot: number_2
+  number_3:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_text
+      conditions:
+      - active_loop: number_form_3
+        requested_slot: number_3
+
+  number_4:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_text
+      conditions:
+      - active_loop: number_form_4
+        requested_slot: number_4
+  number_5:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_text
+      conditions:
+      - active_loop: number_form_5
+        requested_slot: number_5
+  number_6:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_text
+      conditions:
+      - active_loop: number_form_6
+        requested_slot: number_6
+  number_7:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_text
+      conditions:
+      - active_loop: number_form_7
+        requested_slot: number_7
+  number_8:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_text
+      conditions:
+      - active_loop: number_form_8
+        requested_slot: number_8
+  number_9:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_text
+      conditions:
+      - active_loop: number_form_9
+        requested_slot: number_9
+  number_10:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_text
+      conditions:
+      - active_loop: number_form_10
+        requested_slot: number_10
+  number_11:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_text
+      conditions:
+      - active_loop: number_form_11
+        requested_slot: number_11
+  number_12:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_text
+      conditions:
+      - active_loop: number_form_12
+        requested_slot: number_12
+  number_13:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_text
+      conditions:
+      - active_loop: number_form_13
+        requested_slot: number_13
+  number_14:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_text
+      conditions:
+      - active_loop: number_form_14
+        requested_slot: number_14
+  number_15:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_text
+      conditions:
+      - active_loop: number_form_15
+        requested_slot: number_15
+  number_16:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_text
+      conditions:
+      - active_loop: number_form_16
+        requested_slot: number_16
+  number_17:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_text
+      conditions:
+      - active_loop: number_form_17
+        requested_slot: number_17
+  number_18:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_text
+      conditions:
+      - active_loop: number_form_18
+        requested_slot: number_18
+  number_19:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_text
+      conditions:
+      - active_loop: number_form_19
+        requested_slot: number_19
+  number_20:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_text
+      conditions:
+      - active_loop: number_form_20
+        requested_slot: number_20
+responses:
+  utter_greet:
+  - text: Hey! My name is Michael. I was created to help people find help in different countries, and to help assess your mental health.  Can you tell me your name?
+  utter_did_that_help:
+  - text: Did that help you?
+  utter_happy:
+  - text: Great, carry on!
+  utter_goodbye:
+  - text: Bye
+  utter_iamabot:
+  - text: I am a bot, powered by Rasa.
+  utter_submit:
+  - text: Ok. Thank you!
+  utter_slots_values:
+  - text: I will remember your name, {first_name}!
+  utter_kind_of_help:
+  - text: What can I do for you today?
+  utter_country:
+  - text: First of all, can you tell me in which country you are right now?
+  utter_country_help:
+  - text: Ok, since you're in {pais}, I will foward you the help that is available to you there.
+  utter_start_questionaire:
+  - text: You've probably been through a lot {first_name}, and I'm sorry about that, but I want you to know that stressful or scary events happen to many people. So, remember that you are not alone, there's a lot of people who have had experiences like these. Now, I need you to answer some questions so I can understand how you're dealing with these experiences. Is that okay?
+  utter_questionaire_ptsd_start_adults:
+  - text: 'Okay, thank you for beeing cooperative {first_name}. Now, I will list some problems that people sometimes have in response to a very stressful experience. Please read each problem carefully and tell me how much the following has bothered you in the past month, in a scale from 0 to 4. 0 - Never; 1 - A little bit; 2- Sometimes; 3 - A lot; 4 - Almost always; '
+  utter_ptsd_1_adults:
+  - text: In the last month, how much were you bothered by repeated, disturbing, and unwanted memories of the stressful experience?
+  utter_ptsd_2_adults:
+  - text: In the last month, how much were you bothered by repeated, disturbing dreams of the stressful experience?
+  utter_ptsd_3_adults:
+  - text: 'In the last month, how much were you bothered by suddenly feeling or acting as if the stressful experience were actually happening again (as if you were actually back there reliving it)? '
+  utter_ptsd_4_adults:
+  - text: 'In the last month, how much were you bothered by feeling very upset when something reminded you of the stressful experience? '
+  utter_ptsd_5_adults:
+  - text: 'In the last month, how much were you bothered by having strong physical reactions when something reminded you of the stressful experience (for example, heart pounding, trouble breathing, sweating)? '
+  utter_ptsd_6_adults:
+  - text: 'In the last month, how much were you bothered by avoiding memories, thoughts, or feelings related to the stressful experience?  '
+  utter_ptsd_7_adults:
+  - text: In the last month, how much were you bothered by avoiding external reminders of the stressful experience (for example, people, places, conversations, activities, objects, or situations)?
+  utter_ptsd_8_adults:
+  - text: 'In the last month, how much were you bothered by trouble remembering important parts of the stressful experience? '
+  utter_ptsd_9_adults:
+  - text: 'In the last month, how much were you bothered by having strong negative beliefs about yourself, other people, or the world (for example, having thoughts such as: I am bad, there is something seriously wrong with me, no one can be trusted, the world is completely dangerous)? '
+  utter_ptsd_10_adults:
+  - text: 'In the last month, how much were you bothered by blaming yourself or someone else for the stressful experience or what happened after it?  '
+  utter_ptsd_11_adults:
+  - text: 'In the last month, how much were you bothered by having strong negative feelings such as fear, horror, anger, guilt, or shame?  '
+  utter_ptsd_12_adults:
+  - text: 'In the last month, how much were you bothered by loss of interest in activities that you used to enjoy? '
+  utter_ptsd_13_adults:
+  - text: In the last month, how much were you bothered by feeling distant or cut off from other people?
+  utter_ptsd_14_adults:
+  - text: In the last month, how much were you bothered by trouble experiencing positive feelings (for example, being unable to feel happiness or have loving feelings for people close to you)?
+  utter_ptsd_15_adults:
+  - text: In the last month, how much were you bothered by irritable behavior, angry outbursts, or acting aggressively?
+  utter_ptsd_16_adults:
+  - text: In the last month, how much were you bothered by taking too many risks or doing things that could cause you harm?
+  utter_ptsd_17_adults:
+  - text: 'In the last month, how much were you bothered by being “superalert” or watchful or on guard? '
+  utter_ptsd_18_adults:
+  - text: 'In the last month, how much were you bothered by feeling jumpy or easily startled? '
+  utter_ptsd_19_adults:
+  - text: 'In the last month, how much were you bothered by having difficulty concentrating? '
+  utter_ptsd_20_adults:
+  - text: 'In the last month, how much were you bothered by trouble falling or staying asleep? '
+
+actions:
+- action_get_score
+- action_info_country
+- utter_country
+- utter_country_help
+- utter_greet
+- utter_kind_of_help
+- utter_ptsd_1_adults
+- utter_ptsd_2_adults
+- utter_ptsd_3_adults
+- utter_ptsd_4_adults
+- utter_ptsd_5_adults
+- utter_ptsd_6_adults
+- utter_ptsd_7_adults
+- utter_ptsd_8_adults
+- utter_ptsd_9_adults
+- utter_ptsd_10_adults
+- utter_ptsd_11_adults
+- utter_ptsd_12_adults
+- utter_ptsd_13_adults
+- utter_ptsd_14_adults
+- utter_ptsd_15_adults
+- utter_ptsd_16_adults
+- utter_ptsd_17_adults
+- utter_ptsd_18_adults
+- utter_ptsd_19_adults
+- utter_ptsd_20_adults
+- utter_questionaire_ptsd_start_adults
+- utter_slots_values
+- utter_start_questionaire
+- utter_submit
+- validate_name_form
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

@@ -1,0 +1,217 @@
+version: "3.1"
+
+stories:
+
+
+- story: Mutual path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: name_form
+  - active_loop: name_form
+  - slot_was_set:
+    - requested_slot: first_name
+  - slot_was_set:
+    - first_name: give_name
+  - active_loop: null
+  - action: utter_submit
+  - action: utter_slots_values
+  - action: utter_kind_of_help
+  - checkpoint: check_help
+
+
+- story: country_path
+  steps:
+  - checkpoint: check_help
+  - intent: ask_country
+  - action: utter_country
+  - action: pais_form
+  - active_loop: pais_form
+  - slot_was_set:
+    - requested_slot: pais
+  - slot_was_set:
+    - pais: give_country
+  - slot_was_set:
+    - requested_slot: null
+  - active_loop: null
+  - action: utter_country_help
+  - action: action_info_country
+
+- story: Mental path
+  steps:
+  - checkpoint: check_help
+  - intent: ask_mental_assessment
+  - action: utter_start_questionaire
+  - intent: affirm
+  - action: utter_country
+  - action: pais_form
+  - active_loop: pais_form
+  - slot_was_set:
+    - requested_slot: pais
+  - slot_was_set:
+    - pais: give_country
+  - active_loop: null 
+  - action: utter_questionaire_ptsd_start_adults
+  - action: utter_ptsd_1_adults
+  - action: number_form
+  - active_loop: number_form
+  - slot_was_set:
+    - requested_slot: number
+  - slot_was_set:
+    - number: give_number
+  - active_loop: null
+  - action: utter_ptsd_2_adults
+  - action: number_form_1
+  - active_loop: number_form_1
+  - slot_was_set:
+    - requested_slot: number_1
+  - slot_was_set:
+    - number_1: give_number
+  - active_loop: null
+  - action: utter_ptsd_3_adults
+  - action: number_form_2
+  - active_loop: number_form_2
+  - slot_was_set:
+    - requested_slot: number_2
+  - slot_was_set:
+    - number_2: give_number
+  - active_loop: null
+  - action: utter_ptsd_4_adults
+  - action: number_form_3
+  - active_loop: number_form_3
+  - slot_was_set:
+    - requested_slot: number_3
+  - slot_was_set:
+    - number_3: give_number
+  - active_loop: null
+  - action: utter_ptsd_5_adults
+  - action: number_form_4
+  - active_loop: number_form_4
+  - slot_was_set:
+    - requested_slot: number_4
+  - slot_was_set:
+    - number_4: give_number
+  - active_loop: null
+  - action: utter_ptsd_6_adults
+  - action: number_form_5
+  - active_loop: number_form_5
+  - slot_was_set:
+    - requested_slot: number_5
+  - slot_was_set:
+    - number_5: give_number
+  - active_loop: null
+  - action: utter_ptsd_7_adults
+  - action: number_form_6
+  - active_loop: number_form_6
+  - slot_was_set:
+    - requested_slot: number_6
+  - slot_was_set:
+    - number_6: give_number
+  - active_loop: null
+  - action: utter_ptsd_8_adults
+  - action: number_form_7
+  - active_loop: number_form_7
+  - slot_was_set:
+    - requested_slot: number_7
+  - slot_was_set:
+    - number_7: give_number
+  - active_loop: null
+  - action: utter_ptsd_9_adults
+  - action: number_form_8
+  - active_loop: number_form_8
+  - slot_was_set:
+    - requested_slot: number_8
+  - slot_was_set:
+    - number_8: give_number
+  - active_loop: null
+  - action: utter_ptsd_10_adults
+  - action: number_form_9
+  - active_loop: number_form_9
+  - slot_was_set:
+    - requested_slot: number_9
+  - slot_was_set:
+    - number_9: give_number
+  - active_loop: null
+  - action: utter_ptsd_11_adults
+  - action: number_form_10
+  - active_loop: number_form_10
+  - slot_was_set:
+    - requested_slot: number_10
+  - slot_was_set:
+    - number_10: give_number
+  - active_loop: null
+  - action: utter_ptsd_12_adults
+  - action: number_form_11
+  - active_loop: number_form_11
+  - slot_was_set:
+    - requested_slot: number_11
+  - slot_was_set:
+    - number_11: give_number
+  - active_loop: null
+  - action: utter_ptsd_13_adults
+  - action: number_form_12
+  - active_loop: number_form_12
+  - slot_was_set:
+    - requested_slot: number_12
+  - slot_was_set:
+    - number_12: give_number
+  - active_loop: null
+  - action: utter_ptsd_14_adults
+  - action: number_form_13
+  - active_loop: number_form_13
+  - slot_was_set:
+    - requested_slot: number_13
+  - slot_was_set:
+    - number_13: give_number
+  - active_loop: null
+  - action: utter_ptsd_15_adults
+  - action: number_form_14
+  - active_loop: number_form_14
+  - slot_was_set:
+    - requested_slot: number_14
+  - slot_was_set:
+    - number_14: give_number
+  - active_loop: null
+  - action: utter_ptsd_16_adults
+  - action: number_form_15
+  - active_loop: number_form_15
+  - slot_was_set:
+    - requested_slot: number_15
+  - slot_was_set:
+    - number_15: give_number
+  - active_loop: null
+  - action: utter_ptsd_17_adults
+  - action: number_form_16
+  - active_loop: number_form_16
+  - slot_was_set:
+    - requested_slot: number_16
+  - slot_was_set:
+    - number_16: give_number
+  - active_loop: null
+  - action: utter_ptsd_18_adults
+  - action: number_form_17
+  - active_loop: number_form_17
+  - slot_was_set:
+    - requested_slot: number_17
+  - slot_was_set:
+    - number_17: give_number
+  - active_loop: null
+  - action: utter_ptsd_19_adults
+  - action: number_form_18
+  - active_loop: number_form_18
+  - slot_was_set:
+    - requested_slot: number_18
+  - slot_was_set:
+    - number_18: give_number
+  - active_loop: null
+  - action: utter_ptsd_20_adults
+  - action: number_form_19
+  - active_loop: number_form_19
+  - slot_was_set:
+    - requested_slot: number_19
+  - slot_was_set:
+    - number_19: give_number
+  - active_loop: null
+  - action: action_get_score
+  - action: utter_goodbye
+  
